@@ -19,3 +19,6 @@ Task2KB:
 https://drive.google.com/drive/folders/1heZ15q5N85EysNLFLlCuPGmLw-Innojk?usp=share_link
 
 The data are presented as per different categories with json format, which allow them to be easy access.
+
+We also public available the code in developing the question generators with T5/Flan-T5 encoder-decoder models, as well as the code
+for fine-tuning a response generator based upon the generated datasets.
