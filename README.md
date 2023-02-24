@@ -6,6 +6,9 @@ In this work, we public avaialbel two task-oriented conversational datasets join
 
 The links to access each dataset as well as the knowledge graph are given as follows:
 
+saved_question_generation_model (trained_on_multiwoz):
+https://drive.google.com/file/d/1H_dMut5HV72as8zkLV_w07Tz8HkM-OYA/view?usp=share_link
+
 INST2DIAL-Auto:
 https://drive.google.com/drive/folders/1ZVPeWrYHRMJ_6MBqGWYuM6eYKJTw3-bC?usp=share_link
 
