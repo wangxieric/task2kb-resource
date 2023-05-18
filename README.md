@@ -2,9 +2,9 @@
 
 This repository is about a resource paper, 'Task-Oriented Dialog System with Structured Instructional Knowledge' (under review).
 
-![Experimental Results of UBAR](./result_ubar.png)
-
-![Experimental Results of UBAR](./result_jsatod.png)
+Experimental Results of UBAR & variants         |  Experimental Results of JSATOD & variants
+:-------------------------:|:-------------------------:
+![](./result_ubar.png)  |  ![](./result_jsatod.png)
 
 In this work, we public avaialbel two task-oriented conversational datasets joined with a knowledge graph, Task2KB.
 
