@@ -1,6 +1,10 @@
 # INST2DIAL
 
-This repository is about a resource paper, 'INST2DIAL: INSTruction to large-scale DIALogue datasets for Task-Oriented Conversational Modelling', which is under review.
+This repository is about a resource paper, 'Task-Oriented Dialog System with Structured Instructional Knowledge' (under review).
+
+![Experimental Results of UBAR](./result_ubar.png)
+
+![Experimental Results of UBAR](./result_jsatod.png)
 
 In this work, we public avaialbel two task-oriented conversational datasets joined with a knowledge graph, Task2KB.
 
