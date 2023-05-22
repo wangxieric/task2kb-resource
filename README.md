@@ -1,11 +1,18 @@
 <p align="center">
   <img src="./task2kb.png" width="400" />
 </p>
-Task2KB is a task-oriented instructional knowledge base, which offers structured instructions and rich types of related information on tasks across 19 categories.
+
+---
+
+**Task2KB** is a task-oriented instructional knowledge base, which offers structured instructions and rich types of related information on tasks across **19** categories.
 Along with rich task-related information, Task2KB also enables accessing the available knowledge via various retrieval techniques
-(field-based and dense retrievers). Additionally, to illustrate the value of Task2KB, we experimentally augment the knowledge into
+(field-based and dense retrievers). 
+
+Additionally, to illustrate the value of Task2KB, we experimentally augment the knowledge into
 TOD models with two novel development pipelines: (1) fine-tune LLMs with knowledge from Task2KB for boosting TOD model performance, (2) direct context-augmentation with available knowledge.
 We observe significant and consistent in advancing the performance of recent TOD models.
+
+---
 
 This repository is about a resource paper, 'Task-Oriented Dialog System with Structured Instructional Knowledge' (under review).
 
