@@ -1,8 +1,15 @@
 <p align="center">
   <img src="./task2kb.png" width="400" />
+  
 </p>
 
+<h3 align="center">
+    <p>Task-oriented Knowledge Base for developing advanced conversational AI</p>
+</h3>
+ 
 ---
+
+
 
 **Task2KB** is a task-oriented instructional knowledge base, which offers structured instructions and rich types of related information on tasks across **19** categories.
 Along with rich task-related information, Task2KB also enables accessing the available knowledge via various retrieval techniques
