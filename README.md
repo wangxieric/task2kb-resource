@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="./task2kb.png" />
+  <img src="./task2kb.png" width="400" />
 </p>
 Task2KB is a task-oriented instructional knowledge base, which offers structured instructions and rich types of related information on tasks across 19 categories.
 Along with rich task-related information, Task2KB also enables accessing the available knowledge via various retrieval techniques
