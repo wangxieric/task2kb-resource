@@ -1,4 +1,11 @@
-# INST2DIAL
+<p align="center">
+  <img src="./task2kb.png" />
+</p>
+Task2KB is a task-oriented instructional knowledge base, which offers structured instructions and rich types of related information on tasks across 19 categories.
+Along with rich task-related information, Task2KB also enables accessing the available knowledge via various retrieval techniques
+(field-based and dense retrievers). Additionally, to illustrate the value of Task2KB, we experimentally augment the knowledge into
+TOD models with two novel development pipelines: (1) fine-tune LLMs with knowledge from Task2KB for boosting TOD model performance, (2) direct context-augmentation with available knowledge.
+We observe significant and consistent in advancing the performance of recent TOD models.
 
 This repository is about a resource paper, 'Task-Oriented Dialog System with Structured Instructional Knowledge' (under review).
 
@@ -6,7 +13,7 @@ Experimental Results of UBAR & variants         |  Experimental Results of JSATO
 :-------------------------:|:-------------------------:
 ![](./result_ubar.png)  |  ![](./result_jsatod.png)
 
-In this work, we public avaialbel two task-oriented conversational datasets joined with a knowledge graph, Task2KB.
+In this work, we publicly available two task-oriented conversational datasets joined with a knowledge graph, Task2KB.
 
 The links to access each dataset as well as the knowledge graph are given as follows:
 
