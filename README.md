@@ -38,8 +38,24 @@ https://drive.google.com/drive/folders/1heZ15q5N85EysNLFLlCuPGmLw-Innojk?usp=sha
 Task2KB is capable of generating synthetic task-oriented conversational datasets with its step-wise instructions. We public available the implementation from fine-tuning a dialogue generator in T5 or Flan-T5, as well as the dialogue generation code. In addition, we show how we can further fine-tune a distilgpt2 model for response generation.
 
 ### data processing
-The dataprocessing in `[data_processing](https://github.com/wangxieric/task2kb-resource/tree/main/data_preprocessing)' folder includes the implementation that use three candidate conversational datasets, ORConvQA, QReCC and MultiWoZ, for the comparison of using different training data for developing dialog generators.
+The shared code in [data_processing](https://github.com/wangxieric/task2kb-resource/tree/main/data_preprocessing) folder includes the implementation that use three candidate conversational datasets, ORConvQA, QReCC and MultiWoZ, for the comparison of using different training data for developing dialog generators.
 
+### dialog generator training
+Next, in [question_generator_train](https://github.com/wangxieric/task2kb-resource/tree/main/question_generator_train), we also explore various strategies in generating the synthetic dialogues, such as using the Flan-T5 model that trained on ORConvQA dialogues and then further fine-tuned on the MultiWoZ dataset (i.e., [Flan_T5_OR_MultiWoZ.py](https://github.com/wangxieric/task2kb-resource/blob/main/question_generator_train/Flan_T5_OR_MultiWoZ.py)). 
+We also publicly available the saved question_generation_model, which is trained_on_multiwoz:
+https://drive.google.com/file/d/1H_dMut5HV72as8zkLV_w07Tz8HkM-OYA/view?usp=share_link
+
+### synthetic dialog generation & model fine-tuning
+After having the ability in dialogue generation or progressively generating questions with step description as answers, we move to the implementation of generating synthetic dialogues, which uses the last generated pair of question and answer as context and step-wisely generating full dialogues (see [dialogue_generation.py](https://github.com/wangxieric/task2kb-resource/blob/main/dialogue_generation.py)). 
+
+Next, with the generated dialogues ([INST2DIAL-Auto](
+https://drive.google.com/drive/folders/1ZVPeWrYHRMJ_6MBqGWYuM6eYKJTw3-bC?usp=share_link)), we can fine-tune a large language model (e.g., distilgpt2) for task-oriented response generation (in [distilgpt2-train-RespGen.py](https://github.com/wangxieric/task2kb-resource/blob/main/distilgpt2-train-RespGen.py)). The fine-tuned distilGPT2 model is also available here: [link](https://drive.google.com/file/d/1HaY_pWIR6AgxXXmKA-MqFG5kS0iK-zsa/view?usp=share_link). 
+
+In particular, to show the effectiveness of using Task2KB, we experimentally compare with the use if [wikidialog](https://github.com/google-research/dialog-inpainting) that was generated using wikipedia passages. The corresponding checkpoint is also available [link](https://drive.google.com/file/d/1Ls3XRgYPjs4oH-SeZw-lMCg2OzNUSmL-/view?usp=share_link). Then, we use the fine-tuned distilgpt2in two recent advanced task-oriented conversational model (UBAR and JSA-TOD), and compare the performance differences:
+
+Experimental Results of UBAR & variants         |  Experimental Results of JSATOD & variants
+:-------------------------:|:-------------------------:
+![](./result_ubar.png)  |  ![](./result_jsatod.png)
 
 
 ## Indexing Methods for Knowledge Access 
@@ -69,19 +85,15 @@ Then, the resulting index of the dense embedding allow the quick access of task-
 
 This repository is about a resource paper, 'Task-Oriented Dialog System with Structured Instructional Knowledge' (under review).
 
-Experimental Results of UBAR & variants         |  Experimental Results of JSATOD & variants
-:-------------------------:|:-------------------------:
-![](./result_ubar.png)  |  ![](./result_jsatod.png)
+
 
 In this work, we publicly available two task-oriented conversational datasets joined with a knowledge graph, Task2KB.
 
 The links to access each dataset as well as the knowledge graph are given as follows:
 
-saved_question_generation_model (trained_on_multiwoz):
-https://drive.google.com/file/d/1H_dMut5HV72as8zkLV_w07Tz8HkM-OYA/view?usp=share_link
 
-INST2DIAL-Auto:
-https://drive.google.com/drive/folders/1ZVPeWrYHRMJ_6MBqGWYuM6eYKJTw3-bC?usp=share_link
+
+
 
 INST2DIAL-Manual: 
 https://drive.google.com/drive/folders/1hROuwee8BqfPtXkvTo_jmdK7korlntnP?usp=share_link
