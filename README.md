@@ -46,9 +46,14 @@ The dense indexing and knowledge access are implemented with a joined effort of 
 Afterwards, we use the `[generate_dense_embeddings.py](https://github.com/facebookresearch/ParlAI/blob/main/parlai/agents/rag/scripts/generate_dense_embeddings.py)' script in [ParlAI](https://parl.ai/docs/index.html) to encode the information and running:
 
     python generate_dense_embeddings.py -mf zoo:hallucination/multiset_dpr/hf_bert_base.cp --dpr-model True --passages-file step_info_cl.tsv  
-    --outfile step_info --num-shards 50 --shard-id 0 -bs 32
+    --outfile task2kb_index/step_info --num-shards 50 --shard-id 0 -bs 32
     
-The `step_info_cl.tsv' file can be obtained via the following [link](https://drive.google.com/file/d/1QUNZ20hnRb_rbSenS12d1cTDW_niVk27/view?usp=share_link).
+The `step_info_cl.tsv' file can be obtained via the following [link](https://drive.google.com/file/d/1QUNZ20hnRb_rbSenS12d1cTDW_niVk27/view?usp=share_link). Next, we use the exact indexing type from ParlAI as well in addressing the indexing implementation as follows:
+
+    python index_dense_embeddings.py --retriever-embedding-size 768  \
+    --embeddings-dir task2kb_index/ --embeddings-name task2kb --indexer-type exact
+
+Then, the resulting index of the dense embedding allow the quick access of task-oriented information for deploying knowledge-augmented task-oriented conversational models.
 
 
 This repository is about a resource paper, 'Task-Oriented Dialog System with Structured Instructional Knowledge' (under review).
