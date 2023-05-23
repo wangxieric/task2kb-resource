@@ -31,8 +31,15 @@ Philosophy & Religion (2,872) | Relationship (7,880) | Sports & Fitness (10,094)
 Style (18,854)  | Travel (4,826) | Work (11,524)
 Youth (7,112) ||
 
+To access the Task2KB, we enable a quick access via json files that saved in Google drive [link](
+https://drive.google.com/drive/folders/1heZ15q5N85EysNLFLlCuPGmLw-Innojk?usp=share_link). We further illustrate multiple applications of Task2KB.
+
 ## Synthetic Dataset Generation and Fine-tune LLMs
-Task2KB is also capable of generating synthetic task-oriented conversational datasets with its step-wise instructions.
+Task2KB is capable of generating synthetic task-oriented conversational datasets with its step-wise instructions. We public available the implementation from fine-tuning a dialogue generator in T5 or Flan-T5, as well as the dialogue generation code. In addition, we show how we can further fine-tune a distilgpt2 model for response generation.
+
+### data processing
+The dataprocessing in `[data_processing](https://github.com/wangxieric/task2kb-resource/tree/main/data_preprocessing)' folder includes the implementation that use three candidate conversational datasets, ORConvQA, QReCC and MultiWoZ, for the comparison of using different training data for developing dialog generators.
+
 
 
 ## Indexing Methods for Knowledge Access 
