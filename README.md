@@ -19,6 +19,8 @@
 
 ---
 
+<div> <br /> </div>
+
 **Categories of Tasks:**
 
 Category (Quantity) | Category (Quantity) | Category (Quantity) 
