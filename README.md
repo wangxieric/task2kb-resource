@@ -19,7 +19,7 @@
 
 ---
 
-<h4> Categories of Tasks </h4>
+## Categories of Tasks
 
 Category (Quantity) | Category (Quantity) | Category (Quantity) 
 :-------------------------:|:-------------------------:|:-------------------------:
@@ -31,13 +31,17 @@ Philosophy & Religion (2,872) | Relationship (7,880) | Sports & Fitness (10,094)
 Style (18,854)  | Travel (4,826) | Work (11,524)
 Youth (7,112) ||
 
-<h3> Indexing Methods for Knowledge Access </h3>
+## Synthetic Dataset Generation and Fine-tune LLMs
+Task2KB is also capable of generating synthetic task-oriented conversational datasets with its step-wise instructions.
+
+
+## Indexing Methods for Knowledge Access 
 To enable the use of Task2KB, we implment two document indexing methods: field-based indexing and dense indexing:
 
-<h4>Field-based Indexing</h4>
+### Field-based Indexing
 To be filled.
 
-<h4>Dense Indexing</h4> 
+### Dense Indexing
 
 The dense indexing and knowledge access are implemented with a joined effort of Facebook [Faiss](https://github.com/facebookresearch/faiss) and Dense Passgae Retrieval ([DPR](https://github.com/facebookresearch/DPR)). To balance the document length and information specificity, we structure each step of task instructions into the following format: 
 
