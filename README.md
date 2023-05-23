@@ -31,19 +31,24 @@ Philosophy & Religion (2,872) | Relationship (7,880) | Sports & Fitness (10,094)
 Style (18,854)  | Travel (4,826) | Work (11,524)
 Youth (7,112) ||
 
-<h4> Indexing Methods for Knowledge Access </h4>
+<h3> Indexing Methods for Knowledge Access </h3>
 To enable the use of Task2KB, we implment two document indexing methods: field-based indexing and dense indexing:
 
-`Field-based Indexing`:To be filled.
+<h4>Field-based Indexing</h4>
+To be filled.
 
-`Dense Indexing`: The dense indexing and knowledge access are implemented with a joined effort of Facebook [Faiss](https://github.com/facebookresearch/faiss) and Dense Passgae Retrieval ([DPR](https://github.com/facebookresearch/DPR)). To balance the document length and information specificity, we structure each step of task instructions into the following format: 
+<h4>Dense Indexing</h4> 
 
-    id [tab] introduction + step description [tab] title
+The dense indexing and knowledge access are implemented with a joined effort of Facebook [Faiss](https://github.com/facebookresearch/faiss) and Dense Passgae Retrieval ([DPR](https://github.com/facebookresearch/DPR)). To balance the document length and information specificity, we structure each step of task instructions into the following format: 
+
+    id [tab] introduction + step description [tab] Task title
     
 Afterwards, we use the `[generate_dense_embeddings.py](https://github.com/facebookresearch/ParlAI/blob/main/parlai/agents/rag/scripts/generate_dense_embeddings.py)' script in [ParlAI](https://parl.ai/docs/index.html) to encode the information and running:
 
     python generate_dense_embeddings.py -mf zoo:hallucination/multiset_dpr/hf_bert_base.cp --dpr-model True --passages-file step_info_cl.tsv  
     --outfile step_info --num-shards 50 --shard-id 0 -bs 32
+    
+The `step_info_cl.tsv' file can be obtained via the following [link](https://drive.google.com/file/d/1QUNZ20hnRb_rbSenS12d1cTDW_niVk27/view?usp=share_link).
 
 
 This repository is about a resource paper, 'Task-Oriented Dialog System with Structured Instructional Knowledge' (under review).
