@@ -19,6 +19,19 @@
 
 ---
 
+**Categories of Tasks:**
+
+Category (Quantity) | Category (Quantity) | Category (Quantity) 
+:-------------------------:|:-------------------------:|:-------------------------:
+Arts & Entertainment (13,320) | Car & Other Vehicles (4,925) | Computers & Electronics (24,447)
+Education & Communication (24,530) | Family Life (5,383) | Finance & Business (15,305)
+Food & Entertaining (9,966) | Health (25,471) | Hobbies & Crafts (22,383)
+Holidays & Traditions (2,569)| Home & Garden (24,885) | Pets & Animals (15,087)
+Philosophy & Religion (2,872) | Relationship (7,880) | Sports & Fitness (10,094)
+Style (18,854)  | Travel (4,826) | Work (11,524)
+Youth (7,112) ||
+
+
 This repository is about a resource paper, 'Task-Oriented Dialog System with Structured Instructional Knowledge' (under review).
 
 Experimental Results of UBAR & variants         |  Experimental Results of JSATOD & variants
