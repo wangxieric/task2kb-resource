@@ -34,6 +34,13 @@ Youth (7,112) ||
 To access the Task2KB, we enable a quick access via json files that saved in Google drive [link](
 https://drive.google.com/drive/folders/1heZ15q5N85EysNLFLlCuPGmLw-Innojk?usp=share_link). We further illustrate multiple applications of Task2KB.
 
+## Task Attributes
+Aside from the available knowledge of tasks that we collected from [WikiHow](https://www.wikihow.com/Main-Page), for each task, we also identify and share its related attributes that have the potential of being task slots for task completion. One example list of attributes is ['packaging', 'fridging method', 'shipping policy'] for the task of 'How to ship food'. The attribute identification strategy can be summarised into following steps:
+
+1. Entity tagging with [TagMe](https://sobigdata.d4science.org/web/tagme/) that identifies entities can link to a specific wikipedia webpage.
+2. Aggregate section titles or names, which are meaningful summarise or actions, as candidate attributes.
+3. Compare the semantic similarity, via pre-trained [BERT](https://huggingface.co/docs/transformers/model_doc/bert) model, between task titles and the candidate attributes and use the top-5 similar attributes as the finalised attributes for a task.
+
 ## Synthetic Dataset Generation and Fine-tune LLMs
 Task2KB is capable of generating synthetic task-oriented conversational datasets with its step-wise instructions. We public available the implementation from fine-tuning a dialogue generator in T5 or Flan-T5, as well as the dialogue generation code. In addition, we show how we can further fine-tune a distilgpt2 model for response generation.
 
