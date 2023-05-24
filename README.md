@@ -1,8 +1,9 @@
 <p align="center">
   <img src="./task2kb.png" width="400" />
-  
 </p>
-
+<div align="center">
+  [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+</div>
 <h3 align="center">
     <p>Task-oriented Knowledge Base for developing advanced conversational AI</p>
 </h3>
