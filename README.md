@@ -41,6 +41,8 @@ Aside from the available knowledge of tasks that we collected from [WikiHow](htt
 2. Aggregate section titles or names, which are meaningful summarise or actions, as candidate attributes.
 3. Compare the semantic similarity, via pre-trained [BERT](https://huggingface.co/docs/transformers/model_doc/bert) model, between task titles and the candidate attributes and use the top-5 similar attributes as the finalised attributes for a task.
 
+The resulting attribute data can be accessed [here](https://drive.google.com/drive/folders/1blaPTObkFI1g72zj5Cigt2JIy4ILqAR2?usp=drive_link).
+
 ## Synthetic Dataset Generation and Fine-tune LLMs
 Task2KB is capable of generating synthetic task-oriented conversational datasets with its step-wise instructions. We public available the implementation from fine-tuning a dialogue generator in T5 or Flan-T5, as well as the dialogue generation code. In addition, we show how we can further fine-tune a distilgpt2 model for response generation.
 
