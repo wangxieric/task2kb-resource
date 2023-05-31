@@ -75,7 +75,9 @@ Experimental Results of UBAR & variants         |  Experimental Results of JSATO
 On the other hand, to enable a direct use of Task2KB, we also implment two document indexing methods: field-based indexing and dense indexing:
 
 ### Field-based Indexing
-To be filled.
+The field-based indexing leverages the task steps, task descriptions and task summary as $n$ fields for identifying relevant task resources for a given query.
+The implmentation is available [here](https://github.com/wangxieric/task2kb-resource/tree/main/indexing/field_indexing), which builds the index via [Lucene 5.5.0](https://lucene.apache.org/core/5_5_0/). 
+
 
 ### Dense Indexing
 
