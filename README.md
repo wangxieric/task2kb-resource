@@ -76,7 +76,10 @@ On the other hand, to enable a direct use of Task2KB, we also implment two docum
 
 ### Field-based Indexing
 The field-based indexing leverages the task steps, task descriptions and task summary as $n$ fields for identifying relevant task resources for a given query.
+
 The implmentation is available [here](https://github.com/wangxieric/task2kb-resource/tree/main/indexing/field_indexing), which builds the index via [Lucene 5.5.0](https://lucene.apache.org/core/5_5_0/). 
+
+In addition, we also publicly available the resource to be downloaded via this [link](https://drive.google.com/drive/folders/1mzX0zGDEMYzz8bzYBUP4n-8FYQmMP7xD?usp=sharing).
 
 
 ### Dense Indexing
