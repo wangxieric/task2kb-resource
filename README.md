@@ -51,7 +51,11 @@ The resulting attribute data can be accessed [here](https://drive.google.com/dri
 Task2KB is capable of generating synthetic task-oriented conversational datasets with its step-wise instructions. We public available the implementation from fine-tuning a dialogue generator in T5 or Flan-T5, as well as the dialogue generation code. In addition, we show how we can further fine-tune a distilgpt2 model for response generation.
 
 ### data processing
-The shared code in [data_processing](https://github.com/wangxieric/task2kb-resource/tree/main/data_preprocessing) folder includes the implementation that use three candidate conversational datasets, ORConvQA, QReCC and MultiWoZ, for the comparison of using different training data for developing dialog generators.
+The shared code in [data_processing](https://github.com/wangxieric/task2kb-resource/tree/main/data_preprocessing) folder includes the implementation that use three candidate conversational datasets, ORConvQA, QReCC and MultiWoZ, for the comparison of using different training data for developing dialog generators. 
+
+Here we also publicly available the [implementations](https://github.com/wangxieric/task2kb-resource/tree/main/data_preprocessing) of using topic sentences or using sentence with high specificness for dialogue generation.
+
+
 
 ### dialog generator training
 Next, in [question_generator_train](https://github.com/wangxieric/task2kb-resource/tree/main/question_generator_train), we also explore various strategies in generating the synthetic dialogues, such as using the Flan-T5 model that trained on ORConvQA dialogues and then further fine-tuned on the MultiWoZ dataset (i.e., [Flan_T5_OR_MultiWoZ.py](https://github.com/wangxieric/task2kb-resource/blob/main/question_generator_train/Flan_T5_OR_MultiWoZ.py)). 
